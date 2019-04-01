@@ -14,9 +14,6 @@
             caption-side: top;
             text-align: center;
         }        
-        .row {
-            align-content: center;
-        }
 
     </style>
 
@@ -32,11 +29,11 @@
                     </header>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="display:table;margin: 0 auto;">
                 <div class="col-sm-12">
                     <form>
                         <p>Starting Bet: <input type="number" placeholder="$0.00" id="startingBet" step="0.01" style=" width: 60px"/></p>
-                        <button onclick="rollDice(event)" type="submit" id="play">Play</button>
+                        <button style="display:table;margin: 0 auto;" onclick="rollDice(event)" type="submit" id="play">Play</button>
                     </form>
                 </div>
             </div>
