@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Lucky Sevens</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <style type="text/css">
+
+        caption {
+            caption-side: top;
+            text-align: center;
+        }        
+        .row {
+            align-content: center;
+        }
+
+    </style>
+
+    </head>
+
+
+    <body>
+        <main class="container-fluid; mx-auto" align="center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <header>
+                        <h1 style="text-align: center; font-family: oldtown">Lucky Sevens</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form>
+                        <p>Starting Bet: <input type="number" placeholder="$0.00" id="startingBet" step="0.01" style=" width: 60px"/></p>
+                        <button onclick="rollDice(event)" type="submit" id="play">Play</button>
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="row justify-content-center">
+                <div class="col-sm-8" id="hide" style="display:none;" >
+                    <br>
+                    <hr width="25%">
+                    <table id="results" style="width: 50%;" class="table table-striped" align="center">
+                        <thead>
+                            <caption class ="top"><h2>Results</h2></caption>
+                            <tr>
+                                <th class="left">Starting Bet</th>
+                                <th><span id="startBet"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                            <tr>
+                                <td>Total Rolls Before Going Broke</td>
+                                <td><span id="totalRolls"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Highest Amount Won</td>
+                                <td><span id="pinacle"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Roll Count at Highest Amount Won</td>
+                                <td><span id="highRollCount"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+
+
+        </main>
+        <script src="luckysevens.js"></script> 
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+    </body>
+</html>
